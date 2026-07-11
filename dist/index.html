@@ -7,47 +7,297 @@
 
     <link rel="stylesheet" href="./output.css">
 </head>
-<body>
-    <!-- Navbar section -->
-     <nav class="bg-blue-600 shadow-lg fixed w-full top-0 z-50">
-       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between items-center h-16 shadow-2xl">
-            <!-- div logo -->
-             <div class="flex items-center space-x-2 ">
-                <img src="/dist/image/amaan.png" alt="Amaan image as logo" class="w-10 h-10 bg-blue-500 rounded-lg">
-                <span class="text-xl font-bold text-white hover:cursor-pointer hover:shadow-2xl hover:text-yellow-300 duration-300">
-                    AI Tools 
-                </span>
-             </div>
-             <!-- destop menu -->
-             <div class="hidden md:flex space-x-10">
-                <a href="#" class="text-white  hover:text-yellow-300 duration-300">Home</a>
-                <a href="#" class="text-white hover:text-yellow-300 duration-300">Tools</a>
-                <a href="#" class="text-white hover:text-yellow-300 duration-300">Price</a>
-                <a href="#" class="text-white hover:text-yellow-300 duration-300">About Us</a>
-             </div>
-             <!-- Mobile menu button -->
-              <button id="menu-btn" class="md:hidden text-white text-3xl">
-                 ☰
-              </button>
+<body class="bg-gray-100">
+
+    <!-- ================= Navbar ================= -->
+
+    <nav class="fixed top-0 left-0 w-full bg-blue-600 shadow-lg z-50">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="flex justify-between items-center h-16">
+
+                <!-- Logo -->
+
+                <div class="flex items-center gap-3">
+
+                    <img
+                        src="./image/amaan.png"
+                        alt="Logo"
+                        class="w-10 h-10 rounded-lg">
+
+                    <h1
+                        class="text-white text-2xl font-bold cursor-pointer hover:text-yellow-300 duration-300">
+
+                        AI Tools
+
+                    </h1>
+
+                </div>
+
+                <!-- Desktop Menu -->
+
+                <div class="hidden md:flex gap-10">
+
+                    <a href="#" class="text-white hover:text-yellow-300 duration-300">Home</a>
+
+                    <a href="#" class="text-white hover:text-yellow-300 duration-300">Tools</a>
+
+                    <a href="#" class="text-white hover:text-yellow-300 duration-300">Pricing</a>
+
+                    <a href="#" class="text-white hover:text-yellow-300 duration-300">About</a>
+
+                </div>
+
+                <!-- Mobile Button -->
+
+                <button
+                    id="menu-btn"
+                    class="md:hidden text-white text-3xl">
+
+                    ☰
+
+                </button>
+
+            </div>
+
+            <!-- Mobile Menu -->
+
+            <div
+                id="mobile-menu"
+                class="max-h-0 overflow-hidden opacity-0 transition-all duration-500 md:hidden bg-blue-600 rounded-lg">
+
+                <a href="#" class="block px-4 py-3 text-white hover:bg-blue-700">Home</a>
+
+                <a href="#" class="block px-4 py-3 text-white hover:bg-blue-700">Tools</a>
+
+                <a href="#" class="block px-4 py-3 text-white hover:bg-blue-700">Pricing</a>
+
+                <a href="#" class="block px-4 py-3 text-white hover:bg-blue-700">About</a>
+
+            </div>
+
         </div>
-        <div
-    id="mobile-menu"
-    class="max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out md:hidden bg-blue-600 rounded-lg mt-2">
-            <a href="#" class="block py-3 px-4 text-white hover:bg-blue-700 transition"> Home</a>
-             <a href="#" class="block py-3 px-4 text-white hover:bg-blue-700 transition">
-                Tools
-            </a>
-             <a href="#" class="block py-3 px-4 text-white hover:bg-blue-700 transition">
-                Price
-            </a>
-             <a href="#" class="block py-3 px-4 text-white hover:bg-blue-700 transition">
-                About Us
-            </a>
+
+    </nav>
+
+    <!-- ================= Main ================= -->
+
+    <main class="pt-20">
+
+        <!-- Hero Section -->
+
+        <section
+            class="bg-gradient-to-r from-blue-600 to-purple-700 text-white py-24">
+
+            <div class="max-w-7xl mx-auto px-6 text-center">
+
+                <h2 class="text-5xl font-bold mb-6">
+
+                    Discover The Best AI Tools
+
+                </h2>
+
+                <p
+                    class="max-w-2xl mx-auto text-lg text-gray-200">
+
+                    Explore powerful AI tools like ChatGPT, Gemini,
+                    Claude and Grok.
+
+                </p>
+
+                <button id="Explore tool"
+                    class="mt-10 bg-white text-blue-700 px-8 py-3 rounded-lg font-semibold hover:bg-gray-200 duration-300 cursor-pointer">
+
+                    Explore Tools
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- AI Tools -->
+
+        <section class="py-16">
+
+            <div class="max-w-7xl mx-auto px-6">
+
+                <h2
+                    class="text-4xl font-bold text-center mb-12">
+
+                    Popular AI Tools
+
+                </h2>
+
+                <div
+                    class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+
+                    <!-- ChatGPT -->
+
+                    <div
+                        class="bg-white rounded-xl shadow-xl overflow-hidden hover:-translate-y-2 hover:shadow-2xl duration-300">
+
+                        <img
+                            src="./image/chatgptimage.jpg"
+                            alt="ChatGPT"
+                            class="w-full h-48 object-cover">
+
+                        <div class="p-6">
+
+                            <h3 class="text-2xl font-bold">
+
+                                ChatGPT
+
+                            </h3>
+
+                            <p class="mt-4 text-gray-600">
+
+                                AI assistant by OpenAI for coding,
+                                writing and productivity.
+
+                            </p>
+
+                            <button
+                                class="mt-12 w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600">
+
+                                Learn More
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Gemini -->
+
+                    <div
+                        class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 hover:shadow-2xl duration-300">
+
+                        <img
+                            src="./image/gemini.png"
+                            alt="Gemini"
+                            class="w-full h-48 object-cover">
+
+                        <div class="p-6">
+
+                            <h3 class="text-2xl font-bold">
+
+                                Gemini
+
+                            </h3>
+
+                            <p class="mt-4 text-gray-600">
+
+                                Google's AI assistant for searching,
+                                coding and productivity.
+
+                            </p>
+
+                            <button
+                                class="mt-6 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600">
+
+                                Learn More
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Claude -->
+
+                    <div
+                        class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 hover:shadow-2xl duration-300">
+
+                        <img
+                            src="./image/claudeimage.png"
+                            alt="Claude"
+                            class="w-full h-48 object-cover">
+
+                        <div class="p-6">
+
+                            <h3 class="text-2xl font-bold">
+
+                                Claude
+
+                            </h3>
+
+                            <p class="mt-4 text-gray-600">
+
+                                Anthropic AI focused on reasoning,
+                                writing and analysis.
+
+                            </p>
+
+                            <button
+                                class="mt-12 w-full bg-orange-500 text-white py-2 rounded-lg hover:bg-orange-600">
+
+                                Learn More
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Grok -->
+
+                    <div
+                        class="bg-white rounded-xl shadow-lg overflow-hidden hover:-translate-y-2 hover:shadow-2xl duration-300">
+
+                        <img
+                            src="./image/grokimage.avif"
+                            alt="Grok"
+                            class="w-full h-48 object-cover">
+
+                        <div class="p-6">
+
+                            <h3 class="text-2xl font-bold">
+
+                                Grok
+
+                            </h3>
+
+                            <p class="mt-4 text-gray-600">
+
+                                xAI chatbot providing real-time answers
+                                and advanced reasoning.
+
+                            </p>
+
+                            <button
+                                class="mt-6 w-full bg-purple-500 text-white py-2 rounded-lg hover:bg-purple-600">
+
+                                Learn More
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= Footer ================= -->
+
+    <footer class="bg-gray-900 text-white py-6">
+
+        <div class="text-center">
+
+            © 2026 AI Tools. All Rights Reserved.
+
         </div>
-       </div>
-     </nav>
+
+    </footer>
 
     <script src="../src/script.js"></script>
+
 </body>
 </html>
