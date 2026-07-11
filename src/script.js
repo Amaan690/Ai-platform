@@ -15,3 +15,15 @@ menuBtn.addEventListener("click", () => {
     menuBtn.textContent = "☰";
   }
 });
+
+
+// Explore Tools 
+const exploreBtn = document.getElementById("Explore-tool");
+const toolSection = document.getElementById("tool");
+exploreBtn.addEventListener("click", () =>{
+    toolSection.scrollIntoView({
+        behavior:"smooth"
+    });
+});
+
+
