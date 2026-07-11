@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tool Landing Page</title>
+
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <!-- Navbar section -->
+     <nav class="bg-blue-600 shadow-lg fixed w-full top-0 z-50">
+       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16 shadow-2xl">
+            <!-- div logo -->
+             <div class="flex items-center space-x-2 ">
+                <img src="/dist/image/amaan.png" alt="Amaan image as logo" class="w-10 h-10 bg-blue-500 rounded-lg">
+                <span class="text-xl font-bold text-white hover:cursor-pointer hover:shadow-2xl hover:text-yellow-300 duration-300">
+                    AI Tools 
+                </span>
+             </div>
+             <!-- destop menu -->
+             <div class="hidden md:flex space-x-10">
+                <a href="#" class="text-white  hover:text-yellow-300 duration-300">Home</a>
+                <a href="#" class="text-white hover:text-yellow-300 duration-300">Tools</a>
+                <a href="#" class="text-white hover:text-yellow-300 duration-300">Price</a>
+                <a href="#" class="text-white hover:text-yellow-300 duration-300">About Us</a>
+             </div>
+             <!-- Mobile menu button -->
+              <button id="menu-btn" class="md:hidden text-white text-3xl">
+                 ☰
+              </button>
+        </div>
+        <div
+    id="mobile-menu"
+    class="max-h-0 overflow-hidden opacity-0 transition-all duration-500 ease-in-out md:hidden bg-blue-600 rounded-lg mt-2">
+            <a href="#" class="block py-3 px-4 text-white hover:bg-blue-700 transition"> Home</a>
+             <a href="#" class="block py-3 px-4 text-white hover:bg-blue-700 transition">
+                Tools
+            </a>
+             <a href="#" class="block py-3 px-4 text-white hover:bg-blue-700 transition">
+                Price
+            </a>
+             <a href="#" class="block py-3 px-4 text-white hover:bg-blue-700 transition">
+                About Us
+            </a>
+        </div>
+       </div>
+     </nav>
+
+    <script src="../src/script.js"></script>
+</body>
+</html>
