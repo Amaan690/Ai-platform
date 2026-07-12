@@ -26,4 +26,13 @@ exploreBtn.addEventListener("click", () =>{
     });
 });
 
+const learnMoreBtn = document.getElementById("learn-more");
+const priceSection = document.getElementById("price");
 
+learnMoreBtn.addEventListener("click", () => {
+
+    priceSection.scrollIntoView({
+        behavior: "smooth"
+    });
+
+});
